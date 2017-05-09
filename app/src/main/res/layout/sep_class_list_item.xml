@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/classTopicTextView"
+        android:layout_below="@+id/classBuildingTextView"
+        android:layout_alignParentRight="true"
+        android:paddingTop="8dp"
+        android:maxWidth="200dp"
+        android:gravity="right" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/classBuildingTextView"
+        android:layout_alignBottom="@+id/classProfessorTextView"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/classTimeTextView"
+        android:paddingTop="8dp"
+        android:layout_below="@+id/classDaysTextView" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/classProfessorTextView" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/classDaysTextView"
+        android:paddingTop="8dp"
+        android:layout_below="@+id/classProfessorTextView" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/classPeriodTextView"
+        android:textSize="10sp"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

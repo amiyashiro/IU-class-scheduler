@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_height="0.5dp"
+        android:layout_width="match_parent"
+        android:background="@android:color/darker_gray"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/schedPeriodTextView"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="8dp"
+            android:textSize="10sp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/schedTopicTextView"
+            android:paddingTop="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/schedLocationTextView"
+            android:maxWidth="200dp"
+            android:gravity="right" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/schedDaysTextView"
+            android:layout_below="@+id/schedClassProfessorTextView"
+            android:paddingTop="8dp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/schedClassSectionTextView"
+            android:paddingBottom="8dp"
+            android:textSize="10sp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/schedLocationTextView"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/schedClassSectionTextView" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/schedTimeTextView"
+            android:paddingTop="8dp"
+            android:layout_below="@+id/schedDaysTextView" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/schedClassProfessorTextView"
+            android:layout_below="@+id/schedClassSectionTextView" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="Remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/removeClassButton"
+            android:padding="8dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorPrimary"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>
